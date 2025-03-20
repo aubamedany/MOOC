@@ -221,8 +221,8 @@ if __name__=='__main__':
     client = boto3.client(
     "translate",
     region_name="us-east-1",  # Change based on your AWS setup
-    aws_access_key_id="AKIA2UC26RBGMWEWWKEJ",
-    aws_secret_access_key="XiS1u0exNKOSrK8p/6Mow7odroSFWMNzrzggmFuI"
+    aws_access_key_id="",
+    aws_secret_access_key=""
 )
     for u in tqdm(range(len(urls)),  desc="Translating" ):
         res = extract_info_trafilatura(urls[u],images[u])
